@@ -1,0 +1,39 @@
+.loading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* height: 100vh; */
+    width: 100%;
+}
+
+@keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+.pokeball {
+    width: 100px;
+    height: 100px;
+    animation: rotate 2s linear infinite;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+nav{
+    margin-bottom: auto;
+}
+
+footer{
+    margin-top: auto;
+}
+
+.loadText{
+    color: white;
+}

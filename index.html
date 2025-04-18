@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokédex</title>
+    <link rel="icon" type="image/x-icon" href="./assets/img/pokemon-logo.png" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./styles/standard.css" />
+    <link rel="stylesheet" href="./styles/cards.css" />
+    <link rel="stylesheet" href="./styles/loading.css">
+    <link rel="stylesheet" href="./styles/colorOfTypes.css">
+    <link rel="stylesheet" href="./styles/overlay.css">
+    <link rel="stylesheet" href="./styles/responsive.css">
+
+    
+  </head>
+  <body id="body" onload="init()">
+    <nav>
+      <div class="maxWidth">
+        <div class="logo">
+          <a href="./index.html">
+            <img src="./assets/img/pokemon-logo.png" />
+            <span>Pokédex</span>
+          </a>
+        </div>
+
+      <input id="filterWord" onkeyup="filterAndShowNames(`${filterWord.value}`)" type="text" placeholder="Search Pokémon" />
+      </div>
+    </nav>
+
+    <main>
+
+      <div onclick="closeOverlay()" id="overlay" class="overlay d-none">
+      
+      </div>
+
+      <section id="loading" class="loading">
+
+      </section>
+
+      <section id="content" class="gap d-none">
+        
+      </section>
+
+      <div class="load">
+        <button id="loadBtn" class="btn" onclick="loadMorePokemon()">Load More <b>Pokémon</b></button>
+      </div>
+
+      <img src="./assets/icons/arrow-down.png" onclick="goDown()" id="down" class="down" >
+      
+    </main>
+
+    <footer>
+    </footer>
+
+    <script src="./script.js"></script>
+    <script src="./scripts/template.js"></script>
+    <script src="./scripts/loading.js"></script>
+    <script src="./scripts/filter.js"></script>
+    <script src="./scripts/overlay.js"></script>
+    <script src="./scripts/moreAbout.js"></script>
+    <script src="./scripts/switchOverlay.js"></script>
+  </body>
+</html>

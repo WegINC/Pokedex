@@ -1,0 +1,67 @@
+@font-face {
+    font-family: 'Nunito';
+    src: url('../fonts/nunito-v26-latin-regular.woff2') format('woff2');
+  }
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito';
+}
+
+:root{
+    --btn-color: #30a7d7;
+    --snd-color: rgb(36, 41, 78);
+    --bg-color: rgb(13, 18, 58);
+    --overlay-bg: rgb(24, 42, 92);
+    --id-color: #D3D3D3;
+    --card: #21273d;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: var(--bg-color);
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: var(--snd-color);
+    height: 80px;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    background-color: var(--snd-color);
+    height: 100px;
+    color: white;
+}
+
+.btn{
+    padding: 8px 16px;
+    font-size: 16px;
+    border-radius: 8px;
+    border-width: 0px;
+    background-color: var(--btn-color);
+    color: white;
+    cursor: pointer;
+    margin-bottom: 40px;
+}
+
+.btn:hover{
+    background-color: #2381a7;
+    transition: all 250ms ease-in-out;
+}
+
+.d-none{
+    display: none !important;
+}
