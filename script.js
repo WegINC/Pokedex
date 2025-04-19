@@ -79,13 +79,18 @@ function renderTypes(index){
   }
 }
 
-async function loadMorePokemon() {
-  loadingPokemon();
+async function loadingPokeball() {
+  showPokeballLoadingScreen();
   disableBtn();
+
+  setTimeout(async () => {
     PAGINATION_START = pokemonsRender.length;
     PAGINATION_END +=20;
+
   await renderPokemons();
-  disableLoadingPokemon();
+  hidePokeballLoadingScreen();
+  enableBtn();
+  }, 1000);
 }
 
 function disableBtn(){

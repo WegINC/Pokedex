@@ -22,7 +22,7 @@
       <div class="maxWidth">
         <div class="logo">
           <a href="./index.html">
-            <img src="./assets/img/pokeball.png" />
+            <img src="./assets/img/pokeball.png" id="top"/>
             <img src="./assets/img/Pokemon_logo.png"/>
           </a>
         </div>
@@ -43,15 +43,10 @@
 
       <section id="content" class="gap d-none">
         
-      </section>
-
-    <div class="load">
-        <button id="loadBtn" class="wrapper btn" onclick="loadMorePokemon()">Load More</button>
-            <div class="pokeball"></div>
-    </div>      
+      </section>    
     </main>
 
-    <footer>
+    <footer> 
         <script src="./script.js"></script>
         <script src="./scripts/template.js"></script>
         <script src="./scripts/loading.js"></script>
@@ -59,6 +54,10 @@
         <script src="./scripts/overlay.js"></script>
         <script src="./scripts/switchOverlay.js"></script>
         <script src="./scripts/about.js"></script>
+
+        <div class="load">
+            <button id="loadBtn" class="wrapper btn" onclick="loadingPokeball()">Load More</button>
+        </div> 
     </footer>
 
   </body>

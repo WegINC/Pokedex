@@ -106,6 +106,14 @@
     display: flex;
     flex-direction: row;
     margin-bottom: 8px;
+    background-color: rgb(255 203 5);
+    border-radius: 12px;
+    width: 350px;
+    padding: 12px;
+}
+.mainInfo tr:hover {
+    background-color: rgb(231, 136, 3);
+    font-weight: bolder;
 }
 
 .position{
@@ -115,22 +123,10 @@
     padding: 4px;
     position: relative;
 }
-
-.position::after{
-     content: '';
-     height: 4px;
-     width: 0px;
-     background-color: var(--id-color);
-     position: absolute;
-     bottom: 0px;
-     right: 0%;    
-     transition: all 250ms ease-in-out;
-  }
-  
-.position:hover::after{
-     width: 100%;
-     left: 0%;
-    }
+.position:hover {
+    background-color: rgb(231, 136, 3);
+    font-weight: bolder;
+}
 
 .active{
     background-color: #d3d3d33b;

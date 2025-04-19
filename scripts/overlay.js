@@ -13,6 +13,24 @@ async function toggleOverlay(index) {
     await mainInfo(index);
     disableLoadingContent();
   }
+function loadingContent() {
+    let loadingRef = document.getElementById("loading");
+    loadingRef.classList.add("overlay");
+  
+    let overlayRef = document.getElementById("overlay");
+    overlayRef.classList.add("d-none");
+  
+    loadingRef.innerHTML = templateLoading();
+  }
+
+  function disableLoadingContent() {
+    let loadingRef = document.getElementById("loading");
+    loadingRef.innerHTML = "";
+    loadingRef.classList.remove("overlay");
+  
+    let overlayRef = document.getElementById("overlay");
+    overlayRef.classList.remove("d-none");
+  }
   
   async function fetchPokemonInfo(url) {
     let response = await fetch(url);
