@@ -1,12 +1,7 @@
-@font-face {
-    font-family: 'Nunito';
-    src: url('../fonts/nunito-v26-latin-regular.woff2') format('woff2');
-  }
-
 *{
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Nunito';
+    font-family: 'Comic Neue', sans-serif;
 }
 
 :root{
@@ -31,7 +26,7 @@ nav{
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    background-color: var(--snd-color);
+    background-color: rgb(255 203 5);
     height: 80px;
 }
 
@@ -41,7 +36,7 @@ footer{
     align-items: center;
     flex-direction: column;
     width: 100%;
-    background-color: var(--snd-color);
+    background-color: rgb(255 203 5);
     height: 100px;
     color: white;
 }

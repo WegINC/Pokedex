@@ -4,7 +4,6 @@ function showLoadingSpinner(){
     let loadingRef = document.getElementById("loading");
     loadingRef.innerHTML = templateLoading();
   }
-  
   function disableLoadingSpinner(){
     let loadingRef = document.getElementById("loading");
     loadingRef.innerHTML = "";
@@ -34,6 +33,25 @@ function showLoadingSpinner(){
     loadingRef.classList.remove("loading");
     loadingRef.innerHTML = "";
   }
+
+  function setLoadingHTML(show) {
+    let loadingRef = document.getElementById("loading");
+    loadingRef.innerHTML = show ? templateLoading() : "";
+    loadingRef.classList.toggle("loading", show);
+  }
+  
+  function toggleVisibility(id, show) {
+    let toggleRef = document.getElementById(id);
+    if (!toggleRef) return;
+    toggleRef.classList.toggle("d-none", show);
+  }
+  
+  function toggleActivity(id, show) {
+    let toggleRef = document.getElementById(id);
+    if (!toggleRef) return;
+    toggleRef.classList.toggle("active", show);
+  }
+  
 
   function goDown(){
     let contentRef = document.getElementById("content");
