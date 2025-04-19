@@ -73,3 +73,21 @@ function showLoadingSpinner(){
     loadMoreAboutPokemonRef.innerHTML="";
     loadMoreAboutPokemonRef.classList.add("d-none");
   }
+  function loadMorePokemon() {
+    const pokeball = document.querySelector('.pokeball');
+    const loadButton = document.getElementById('loadBtn');
+
+    // Button ausblenden
+    loadButton.style.display = 'none';
+
+    // Pokéball anzeigen
+    pokeball.style.display = 'block';
+
+    // Nach 2 Sekunden Pokéball ausblenden und Button wieder einblenden
+    setTimeout(() => {
+      pokeball.style.display = 'none';
+      loadButton.style.display = 'block';
+    }, 2000);
+
+    // Optional: Hier kannst du deine "mehr Pokémon laden"-Logik reinpacken
+  }

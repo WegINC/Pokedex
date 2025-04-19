@@ -144,18 +144,18 @@ input{
     background-color: transparent;
     box-sizing: border-box;
     border: none;
-    border-bottom: 1px solid gray;
-    color: white;
+    border-bottom: 1px solid rgb(64, 47, 255);
+    color: rgb(0, 0, 0);
     padding: 8px;    
     margin-right: 16px;
 }
 
 input:hover{
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(255, 128, 0, 0.3);
 }
 
 input::placeholder{
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 input:focus{
