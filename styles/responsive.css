@@ -90,8 +90,9 @@
     .evoMainDesignForMore {
         max-width: 350px;
     }
-
-
+    tr {
+        max-width: 320px;
+    }
 }
 
 @media(max-width:450px){
@@ -126,6 +127,7 @@
         padding: 4px 8px;
         font-size: 14px;
     }
+
 }
 
 @media(max-width:400px){
@@ -190,6 +192,10 @@
 
     .svgData{
         flex-direction: column;
+    }
+    tr {
+        max-width: 250px;
+        min-height: 32px;
     }
 }
 

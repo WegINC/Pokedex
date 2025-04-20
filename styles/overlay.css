@@ -122,6 +122,7 @@
     cursor: pointer;
     padding: 4px;
     position: relative;
+    color: black;
 }
 .position:hover {
     background-color: rgb(231, 136, 3);

@@ -125,7 +125,7 @@ function getTemplateOfPokemon(index) {
     return `<div class="evoStyle">
             <div class="arrowPosition">
               <div class="arrowPosition">
-                <img class="arrow" src="../assets/icons/evolutionArrow.png">
+                <img class="arrow" src="./assets/icons/evolutionArrow.png">
               </div>
                 <div class="mainInfoPosition">  
                   <img class="evoPics" src="${pokemon.sprites.other.home.front_default}">
