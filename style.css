@@ -1,0 +1,184 @@
+.logo img{
+    height: 48px;
+    object-fit: contain;
+    margin-right: 8px;
+}
+
+.logo{
+    
+    margin-left: 16px;
+}
+
+.logo a{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-decoration: none;
+}
+
+.logo span{
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.creator{
+    height: 48px;
+    object-fit: contain;
+    margin-bottom: 4px;
+}
+
+.copyright img{
+    height: 24px;
+    object-fit: contain;
+    margin-right: 4px;
+    filter: invert(1);
+}
+
+.copyright{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.loadMore{
+    height: 48px;
+    object-fit: contain;
+    cursor: pointer;
+}
+
+.load{
+    display: flex;
+    justify-content: center;
+}
+
+.gap{
+    gap: 16px;
+}
+
+.mgRight{
+    margin-right: 4px;
+}
+
+.overflowHidden{
+    overflow: hidden;
+}
+
+.idColor{
+    color:var(--id-color);
+    /* margin-right: 4px; */
+}
+
+.svgData{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* flex-direction: column; */
+    margin-bottom: 8px;
+}
+
+.svgData span{
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.svgInfo{
+    border-radius: 8px;
+}
+
+.evoPics{
+    height: 100px;
+    width: 100px;
+    object-fit: contain;
+}
+
+.evoStyle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.evoStyle span{
+    text-transform: capitalize;
+    font-size: 14px;
+}
+
+#statsInfo{
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+}
+
+.arrow{
+    height: 32px;
+    object-fit: contain;
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+.arrowPosition{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainInfoPosition{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.evoMainDesignForMore{
+    display: flex;
+    justify-content: start;        
+    align-items: center;
+    overflow-x: auto;
+    max-width: 400px;
+}
+
+input{
+    border: 0;
+    background-color: transparent;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 1px solid rgb(64, 47, 255);
+    color: rgb(0, 0, 0);
+    padding: 8px;    
+    margin-right: 16px;
+}
+
+input:hover{
+    background-color: rgba(255, 128, 0, 0.3);
+}
+
+input::placeholder{
+    color: rgb(0, 0, 0);
+}
+
+input:focus{
+    outline: none;
+}
+
+.down{
+    color: white;
+    position: fixed;
+    bottom: 8px;
+    right: 8px;
+    filter: drop-shadow(0px 4px 6px black);
+    height: 64px;
+    object-fit: contain;
+}
+
+.maxWidth{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.arrowNext{
+    height: 32px;
+    object-fit: contain;
+    cursor: pointer;
+}

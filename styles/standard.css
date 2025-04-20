@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Comic Neue', sans-serif;
+}
+
+:root{
+    --btn-color: #e99e34;
+    --snd-color: rgb(255 203 5);
+    --bg-color: rgb(91, 108, 237);
+    --overlay-bg: rgb(24, 42, 92);
+    --id-color: #D3D3D3;
+    --card: #21273d;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: var(--bg-color);
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: rgb(255 203 5);
+    height: 80px;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    background-color: rgb(255 203 5);
+    height: 100px;
+    color: white;
+}
+
+.btn{
+    padding: 24px 24px;
+    font-size: 24px;
+    border-radius: 8px;
+    border-width: 0px;
+    background-color: var(--btn-color);
+    color: white;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.btn:hover{
+    background-color: #2381a7;
+    transition: all 250ms ease-in-out;
+}
+
+.d-none{
+    display: none !important;
+}

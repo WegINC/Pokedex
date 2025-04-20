@@ -1,0 +1,163 @@
+.overlay{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    z-index: 1;
+    color: white;
+}
+
+.bgOfInfo{
+    width: 400px;
+    height: 600px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--card);
+    border-radius: 16px;
+    filter: drop-shadow(0px 0px 8px black);
+}
+
+.loadedImg{
+    height: 240px;
+    width: 240px;
+    object-fit: cover;
+    filter: drop-shadow(4px 4px 4px black);
+}
+
+.options{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 400px;
+    background-color: var(--snd-color);
+}
+
+.evoMainDesign{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.evoMainDesignForMore{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    overflow-x: auto;
+    max-width: 400px;   
+}
+
+.mainInfo{
+    padding: 16px;
+    min-height: 220px;
+    min-width: 400px;
+}
+
+.column{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.overlayBgWidth{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+}
+
+.typePics{
+    height: 40px;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+[id^="typesPicture"]{
+    width: 400px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.mainInfo tbody{
+    display: flex;
+    flex-direction: column;
+}
+
+.mainInfo td{
+    display: flex;
+}
+
+/* .mainInfo td:first-child{
+    text-transform: uppercase;
+} */
+
+.mainInfo tr{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 8px;
+    background-color: rgb(255 203 5);
+    border-radius: 12px;
+    width: 350px;
+    padding: 12px;
+    color: black;
+}
+.mainInfo tr:hover {
+    background-color: rgb(231, 136, 3);
+    font-weight: bolder;
+}
+
+.position{
+    width: calc(401px / 3);
+    text-align: center;
+    cursor: pointer;
+    padding: 4px;
+    position: relative;
+    color: black;
+}
+.position:hover {
+    background-color: rgb(231, 136, 3);
+    font-weight: bolder;
+}
+
+.active{
+    background-color: #d3d3d33b;
+    transition: all 250ms ease-in-out;
+    } 
+
+.borderRL{
+    border-right: 1px solid;
+    border-left: 1px solid;
+    }
+
+.cardInfoStyle{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    background-color: var(--card);
+    border-radius: 0 0 8px 8px;
+    padding-left: 8px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    gap: 4px;
+}
+
+.mbTopBottom{
+    margin-top: 8px;
+    margin-bottom: 8px;
+    display: flex;
+justify-content: space-around;
+align-items: center;
+width: 400px;
+}

@@ -1,0 +1,216 @@
+
+@media (max-width:600px){
+    .pokemon img {
+        height: 140px;
+        width: 140px;
+    }
+    
+    .bgDesign {
+        height: 140px;
+        width: 140px;
+        object-fit: contain;
+        border-radius: 8px 8px 0 0;
+    }
+
+    .idColor {
+        font-size: 14px;
+    }
+
+    .capitalize {
+        font-size: 14px;
+    }
+
+    .styleOfType {
+        font-size: 14px;
+    }
+
+    #content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 24px;
+        margin-bottom: 24px;
+        margin-right: 8px;
+        margin-left: 8px;
+    }
+
+    .btn {
+        margin-bottom: 24px;
+    }
+
+    .bgOfInfo {
+        width: 350px;
+        height: 550px;
+    }
+
+    .mbTopBottom{
+        width: 350px;
+    }
+
+    .overlayBgWidth {
+        width: 350px;
+    }
+
+    .loadedImg {
+        height: 200px;
+        width: 200px;
+    }
+
+    [id^="typesPicture"] {
+        width: 350px;
+    }
+
+    .typePics {
+        height: 32px;
+    }
+
+    .options {
+        width: 350px;
+    }
+
+    .position {
+        width: calc(351px / 3);
+    }
+
+    .mainInfo {
+        min-width: 350px;
+        min-height: 220px;
+        padding: 8px;
+    }
+
+    .evoPics {
+        height: 80px;
+        width: 80px;
+    }
+
+    .mainInfo td{
+        font-size: 14px;
+    }
+
+    .evoMainDesignForMore {
+        max-width: 350px;
+    }
+    tr {
+        max-width: 320px;
+    }
+}
+
+@media(max-width:450px){
+    .logo span {
+        font-size: 20px;
+    }
+
+    .logo img {
+        height: 40px;
+    }
+
+    .creator {
+        height: 40px;
+    }
+
+    .copyright span{
+        font-size: 14px;
+    }
+
+    .copyright img {
+        height: 20px;
+    }
+    input {
+        width: 120px;
+    }
+
+    .down {
+        height: 54px;
+    }
+
+    .btn {
+        padding: 4px 8px;
+        font-size: 14px;
+    }
+
+}
+
+@media(max-width:400px){
+
+    .bgOfInfo {
+        width: 300px;
+        height: 500px;
+    }
+
+    .mbTopBottom{
+        width: 300px;
+    }
+
+    .arrowNext{
+        height: 24px;
+    }
+
+    .overlayBgWidth {
+        width: 300px;
+    }
+
+    .loadedImg {
+        height: 200px;
+        width: 200px;
+    }
+
+    [id^="typesPicture"] {
+        width: 300px;
+    }
+
+    .typePics {
+        height: 32px;
+    }
+
+    .options {
+        width: 300px;
+    }
+
+    .position {
+        width: calc(301px / 3);
+    }
+
+    .mainInfo {
+        min-width: 300px;
+        min-height: 170px;
+        padding: 8px;
+        overflow-y: auto;
+    }
+
+    .evoPics {
+        height: 64px;
+        width: 64px;
+    }
+
+    .evoMainDesignForMore {
+        max-width: 300px;
+    }
+
+    .arrow {
+        height: 24px;
+    }
+
+    .svgData{
+        flex-direction: column;
+    }
+    tr {
+        max-width: 250px;
+        min-height: 32px;
+    }
+}
+
+@media (min-width:1441px){
+    main{
+        max-width: 1440px;
+    }
+}
+
+@media (min-width:1921px){
+    .maxWidth{
+        max-width: 1920px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+
