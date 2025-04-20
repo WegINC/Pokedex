@@ -1,35 +1,47 @@
-async function nextPic(index){
-    let contentOverlayRef = document.getElementById("overlay");
-    contentOverlayRef.innerHTML="";
+async function nextPic(index) {
+    const contentOverlayRef = document.getElementById("overlay");
+    contentOverlayRef.innerHTML = "";
     loadingSwitchContent();
-    if(index < pokemonsRender.length-1){
-        index++;
-        await getNextElement(index);
-    }else if(index = pokemonsRender.length){
-        index = 0;
-        await getFirstElementOfArray(index);
+  
+    if (index < pokemonsRender.length - 1) {
+      index++;
+      await getNextElement(index);
+    } else if (index === pokemonsRender.length) {
+      index = 0;
+      await getFirstElementOfArray(index);
     }
+  
+    requestAnimationFrame(async () => {
       await mainInfo(index);
       disableLoadingSwitchContent();
-}
+    });
+  }
 
-async function getNextElement(index) {
-    let contentOverlayRef = document.getElementById("overlay");
-    let pokemonInfo = await fetchPokemonInfo(pokemonsRender[index].url);
+  async function getNextElement(index) {
+    const contentOverlayRef = document.getElementById("overlay");
+    const pokemonInfo = await fetchPokemonInfo(pokemonsRender[index].url);
     contentOverlayRef.innerHTML = overlayTemplate(pokemonInfo, index);
-    let pokemonInfoTypes = pokemonInfo.types;
-    getInfoType(pokemonInfoTypes, index);
-}
+  
+    requestAnimationFrame(() => {
+      getInfoType(pokemonInfo.types, index);
+    });
+  }
 
-async function getInfoType(pokemonInfoTypes, index){
-    let typesPicture = `typesPicture${index}`;
-    for (let index = 0; index < pokemonInfoTypes.length; index++) {
-        let typeInfo = await fetchPokemonInfo(pokemonInfoTypes[index].type.url);
-        let typeId = typeInfo.id;
-        let typesPictureRef = document.getElementById(typesPicture);
-        typesPictureRef.innerHTML += await getTypeImg(typeId);
-      }
-}
+async function getInfoType(pokemonInfoTypes, index) {
+    const typesPictureId = `typesPicture${index}`;
+    const typesPictureRef = document.getElementById(typesPictureId);
+  
+    if (!typesPictureRef) {
+      console.warn(`⚠️ Element '${typesPictureId}' nicht gefunden – getInfoType übersprungen`);
+      return;
+    }
+  
+    for (let i = 0; i < pokemonInfoTypes.length; i++) {
+      const typeInfo = await fetchPokemonInfo(pokemonInfoTypes[i].type.url);
+      const typeId = typeInfo.id;
+      typesPictureRef.innerHTML += await getTypeImg(typeId);
+    }
+  }
 
 async function prevPic(index){
     let contentOverlayRef = document.getElementById("overlay");

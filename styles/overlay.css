@@ -110,6 +110,7 @@
     border-radius: 12px;
     width: 350px;
     padding: 12px;
+    color: black;
 }
 .mainInfo tr:hover {
     background-color: rgb(231, 136, 3);
